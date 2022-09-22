@@ -1,0 +1,80 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: #fff;
+    padding: 5rem 8rem;
+    font-family: 'Inter';
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+img {
+    border-radius: auto;
+    height: 30rem;
+    width: auto;
+    object-fit: cover;
+}
+
+small {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca';
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+h2 {
+    display: flex;
+
+}
+
+h2 p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.container {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.item-1 {
+    padding: 3rem;
+}
+
+.about {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.item-2 {
+    padding: 0%;
+}
+
+@media (max-width:992px) {
+    body {
+        padding: 0%;
+    }
+    
+    img {
+        height: 35rem;
+        width: max-content;
+        object-fit: cover;
+        overflow: hidden;
+        background-image: url(images/image-header-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .item-2 {
+        padding: 0%;
+        object-fit: fill;
+    }
+}
