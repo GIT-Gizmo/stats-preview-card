@@ -3,6 +3,10 @@ body {
     color: #fff;
     padding: 5rem 8rem;
     font-family: 'Inter';
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -19,6 +23,12 @@ img {
     height: 30rem;
     width: auto;
     object-fit: cover;
+    mix-blend-mode: overlay;
+    opacity: 90%;
+}
+
+.overlay {
+    background-color: hsl(277, 64%, 61%);
 }
 
 small {
@@ -67,9 +77,6 @@ h2 p {
         width: max-content;
         object-fit: cover;
         overflow: hidden;
-        background-image: url(images/image-header-desktop.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
 
@@ -77,4 +84,9 @@ h2 p {
         padding: 0%;
         object-fit: fill;
     }
+}
+
+@media (max-width:767px) {
+        .container :nth-child(1) { order: 2; }
+    
 }
